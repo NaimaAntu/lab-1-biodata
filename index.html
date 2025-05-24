@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Bio Data</h2>
+
+        <div class="profile-picture-section">
+            <div class="profile-placeholder">
+                Photo
+            </div>
+            <label for="profilePicUpload" class="upload-button">
+                Upload Photo
+                <input type="file" id="profilePicUpload" name="profilePic" accept="image/*">
+            </label>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (e.g., 5'4" or 162 cm):</label>
+                <input type="text" id="height" name="height" placeholder="e.g., 5 feet 4 inches">
+            </div>
+
+            <div class="form-group">
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup" name="bloodGroup">
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Marital Status:</label>
+                <div class="radio-group">
+                    <input type="radio" id="married" name="maritalStatus" value="married">
+                    <label for="married">Married</label>
+                    <input type="radio" id="unmarried" name="maritalStatus" value="unmarried">
+                    <label for="unmarried">Unmarried</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies:</label>
+                <div class="checkbox-group">
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyCooking" name="hobbies" value="Cooking">
+                        <label for="hobbyCooking">Cooking</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyReading" name="hobbies" value="Reading">
+                        <label for="hobbyReading">Reading</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyGardening" name="hobbies" value="Gardening">
+                        <label for="hobbyGardening">Gardening</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyCrafts" name="hobbies" value="Crafts">
+                        <label for="hobbyCrafts">Crafts</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyTraveling" name="hobbies" value="Traveling">
+                        <label for="hobbyTraveling">Traveling</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbySinging" name="hobbies" value="Singing">
+                        <label for="hobbySinging">Singing</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyPainting" name="hobbies" value="Painting">
+                        <label for="hobbyPainting">Painting</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="checkbox" id="hobbyYoga" name="hobbies" value="Yoga/Fitness">
+                        <label for="hobbyYoga">Yoga/Fitness</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Current Address:</label>
+                <textarea id="address" name="address" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="permanentAddress">Permanent Address:</label>
+                <textarea id="permanentAddress" name="permanentAddress" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="religion">Religion:</label>
+                <input type="text" id="religion" name="religion">
+            </div>
+
+            <div class="form-group">
+                <label for="education">Educational Qualification:</label>
+                <textarea id="education" name="education" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">Occupation/Profession:</label>
+                <input type="text" id="occupation" name="occupation">
+            </div>
+            
+            <div class="form-group">
+                <label>Family Details:</label>
+                <textarea id="familyDetails" name="familyDetails" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <button type="submit" class="submit-button">Submit Bio Data</button>
+        </form>
+    </div>
+</body>
+</html>
